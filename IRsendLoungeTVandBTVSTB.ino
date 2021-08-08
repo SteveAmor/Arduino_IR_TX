@@ -30,7 +30,7 @@ void setup()
 void loop() { 
   
   char code;
-  int STB_Status = isTVOn();
+  int STB_Status = isSTBOn();
   digitalWrite(13, STB_Status);
   
   if(STB_Status) {  
@@ -64,7 +64,7 @@ void loop() {
 
   while(1) {  // repeat forever
   
-    digitalWrite(13, isTVOn());
+    digitalWrite(13, isSTBOn());
       
     if (Serial.available()) {
       code = Serial.read();
@@ -163,7 +163,7 @@ void loop() {
   }
 }
 
-boolean isTVOn() {
+boolean isSTBOn() {
   if(analogRead(A0) > 100) {
     return true;
   }
