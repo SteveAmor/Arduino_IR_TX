@@ -12,6 +12,7 @@
 // Arduino GND connected to SCART pin 17.
 // Arduino LED (pin 13) reflects if STB is on or off.
 
+#define SEND_PWM_BY_TIMER
 #include <IRremote.h>
 
 IRsend irsend;
