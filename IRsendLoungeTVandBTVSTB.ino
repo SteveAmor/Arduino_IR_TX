@@ -20,6 +20,10 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(13,OUTPUT);
+  delay(2000);
+  for (int i = 0; i < 3; i++) {
+    irsend.sendNEC(0x00FE02FD, 32); // Tokai TV power code
+    delay(40);
 }
 
 void loop() { 
