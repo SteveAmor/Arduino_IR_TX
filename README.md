@@ -5,3 +5,5 @@ Added code to transmit RCMM 32 bit (Nokia32) for BT Vision Set Top Box based on 
 Updated for YouView STB
 
 IRremote.cpp IRremote.h and IRremoteInt.h need to be zipped up in a file called IRremote.zip and then added as a new Library to the Arduino IDE.
+
+Or install IRRemote libray using the Arduino IDE LibraryManager without BT Vision STB support
